@@ -7,7 +7,7 @@ Try to connect the number from 1 to 50 by touching on your screen in the "correc
 #Scoring: 
 
 10 - 19 secs : Impossible 
-20 - 29 secs : Liar
+20 - 29 secs : Wow
 30 - 39 secs : you are special
 40 - 59 secs : Expert
 60 - 79 secs : Normal 
