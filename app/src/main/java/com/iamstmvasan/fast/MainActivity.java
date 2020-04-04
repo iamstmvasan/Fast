@@ -17,7 +17,7 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
     Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,start;
-    TextView t1 ,timer ,bestScore;
+    TextView t1 ,timer ,bestScore , result;
     int click = 1;
     int seconds = 0;
     CountDownTimer cdt;
@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
         timer = findViewById(R.id.timer);
         bestScore = findViewById(R.id.bestScore);
+        result = findViewById(R.id.result);
 
         t1 = findViewById(R.id.textView);
 
@@ -142,6 +143,34 @@ public class MainActivity extends AppCompatActivity {
                     b24.setBackgroundResource(R.drawable.btn);
                     b25.setBackgroundResource(R.drawable.btn);
 
+                    b1.setVisibility(View.VISIBLE);
+                    b2.setVisibility(View.VISIBLE);
+                    b3.setVisibility(View.VISIBLE);
+                    b4.setVisibility(View.VISIBLE);
+                    b5.setVisibility(View.VISIBLE);
+                    b6.setVisibility(View.VISIBLE);
+                    b7.setVisibility(View.VISIBLE);
+                    b8.setVisibility(View.VISIBLE);
+                    b9.setVisibility(View.VISIBLE);
+                    b10.setVisibility(View.VISIBLE);
+                    b11.setVisibility(View.VISIBLE);
+                    b12.setVisibility(View.VISIBLE);
+                    b13.setVisibility(View.VISIBLE);
+                    b14.setVisibility(View.VISIBLE);
+                    b15.setVisibility(View.VISIBLE);
+                    b16.setVisibility(View.VISIBLE);
+                    b17.setVisibility(View.VISIBLE);
+                    b18.setVisibility(View.VISIBLE);
+                    b19.setVisibility(View.VISIBLE);
+                    b20.setVisibility(View.VISIBLE);
+                    b21.setVisibility(View.VISIBLE);
+                    b22.setVisibility(View.VISIBLE);
+                    b23.setVisibility(View.VISIBLE);
+                    b24.setVisibility(View.VISIBLE);
+                    b25.setVisibility(View.VISIBLE);
+
+                    result.setVisibility(View.INVISIBLE);
+
                     startTimer();
                     //cdt.start();
                 }
@@ -155,14 +184,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int num = Integer.valueOf(b1.getText().toString());
                 if(num == click){
+                    if(num >= 26){
+                        b1.setVisibility(View.INVISIBLE);
+
+                    }
                     b1.setText(String.valueOf(li2.get(0)));
                     click++;
                     t1.setText(String.valueOf(click));
                     b1.setBackgroundResource(R.drawable.click_btn);
                 }
-                if(num >= 26){
-                    b1.setBackgroundResource(R.drawable.btn);
-                }
+
             }
         });
         b2.setOnClickListener(new View.OnClickListener() {
@@ -170,14 +201,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int num = Integer.valueOf(b2.getText().toString());
                 if(num == click){
+                    if(num >= 26){
+                        b2.setVisibility(View.INVISIBLE);
+                    }
                     b2.setText(String.valueOf(li2.get(1)));
                     click++;
                     t1.setText(String.valueOf(click));
                     b2.setBackgroundResource(R.drawable.click_btn);
                 }
-                if(num >= 26){
-                    b2.setBackgroundResource(R.drawable.btn);
-                }
+
             }
         });
         b3.setOnClickListener(new View.OnClickListener() {
@@ -185,14 +217,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int num = Integer.valueOf(b3.getText().toString());
                 if(num == click){
+                    if(num >= 26){
+                        b3.setVisibility(View.INVISIBLE);
+                    }
                     b3.setText(String.valueOf(li2.get(2)));
                     click++;
                     t1.setText(String.valueOf(click));
                     b3.setBackgroundResource(R.drawable.click_btn);
                 }
-                if(num >= 26){
-                    b3.setBackgroundResource(R.drawable.btn);
-                }
+
             }
         });
         b4.setOnClickListener(new View.OnClickListener() {
@@ -200,14 +233,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int num = Integer.valueOf(b4.getText().toString());
                 if(num == click){
+                    if(num >= 26){
+                        b4.setVisibility(View.INVISIBLE);
+                    }
                     b4.setText(String.valueOf(li2.get(3)));
                     click++;
                     t1.setText(String.valueOf(click));
                     b4.setBackgroundResource(R.drawable.click_btn);
                 }
-                if(num >= 26){
-                    b4.setBackgroundResource(R.drawable.btn);
-                }
+
             }
         });
         b5.setOnClickListener(new View.OnClickListener() {
@@ -215,14 +249,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int num = Integer.valueOf(b5.getText().toString());
                 if(num == click){
+                    if(num >= 26){
+                        b5.setVisibility(View.INVISIBLE);
+                    }
                     b5.setText(String.valueOf(li2.get(4)));
                     click++;
                     t1.setText(String.valueOf(click));
                     b5.setBackgroundResource(R.drawable.click_btn);
                 }
-                if(num >= 26){
-                    b5.setBackgroundResource(R.drawable.btn);
-                }
+
             }
         });
         b6.setOnClickListener(new View.OnClickListener() {
@@ -230,14 +265,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int num = Integer.valueOf(b6.getText().toString());
                 if(num == click){
+                    if(num >= 26){
+                        b6.setVisibility(View.INVISIBLE);
+                    }
                     b6.setText(String.valueOf(li2.get(5)));
                     click++;
                     t1.setText(String.valueOf(click));
                     b6.setBackgroundResource(R.drawable.click_btn);
                 }
-                if(num >= 26){
-                    b6.setBackgroundResource(R.drawable.btn);
-                }
+
             }
         });
         b7.setOnClickListener(new View.OnClickListener() {
@@ -245,14 +281,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int num = Integer.valueOf(b7.getText().toString());
                 if(num == click){
+                    if(num >= 26){
+                        b7.setVisibility(View.INVISIBLE);
+                    }
                     b7.setText(String.valueOf(li2.get(6)));
                     click++;
                     t1.setText(String.valueOf(click));
                     b7.setBackgroundResource(R.drawable.click_btn);
                 }
-                if(num >= 26){
-                    b7.setBackgroundResource(R.drawable.btn);
-                }
+
             }
         });
         b8.setOnClickListener(new View.OnClickListener() {
@@ -260,14 +297,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int num = Integer.valueOf(b8.getText().toString());
                 if(num == click){
+                    if(num >= 26){
+                        b8.setVisibility(View.INVISIBLE);
+                    }
                     b8.setText(String.valueOf(li2.get(7)));
                     click++;
                     t1.setText(String.valueOf(click));
                     b8.setBackgroundResource(R.drawable.click_btn);
                 }
-                if(num >= 26){
-                    b8.setBackgroundResource(R.drawable.btn);
-                }
+
             }
         });
         b9.setOnClickListener(new View.OnClickListener() {
@@ -275,14 +313,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int num = Integer.valueOf(b9.getText().toString());
                 if(num == click){
+                    if(num >= 26){
+                        b9.setVisibility(View.INVISIBLE);
+                    }
                     b9.setText(String.valueOf(li2.get(8)));
                     click++;
                     t1.setText(String.valueOf(click));
                     b9.setBackgroundResource(R.drawable.click_btn);
                 }
-                if(num >= 26){
-                    b9.setBackgroundResource(R.drawable.btn);
-                }
+
             }
         });
         b10.setOnClickListener(new View.OnClickListener() {
@@ -290,14 +329,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int num = Integer.valueOf(b10.getText().toString());
                 if(num == click){
+                    if(num >= 26){
+                        b10.setVisibility(View.INVISIBLE);
+                    }
                     b10.setText(String.valueOf(li2.get(9)));
                     click++;
                     t1.setText(String.valueOf(click));
                     b10.setBackgroundResource(R.drawable.click_btn);
                 }
-                if(num >= 26){
-                    b10.setBackgroundResource(R.drawable.btn);
-                }
+
             }
         });
         b11.setOnClickListener(new View.OnClickListener() {
@@ -305,14 +345,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int num = Integer.valueOf(b11.getText().toString());
                 if(num == click){
+                    if(num >= 26){
+                        b11.setVisibility(View.INVISIBLE);
+                    }
                     b11.setText(String.valueOf(li2.get(10)));
                     click++;
                     t1.setText(String.valueOf(click));
                     b11.setBackgroundResource(R.drawable.click_btn);
                 }
-                if(num >= 26){
-                    b11.setBackgroundResource(R.drawable.btn);
-                }
+
             }
         });
         b12.setOnClickListener(new View.OnClickListener() {
@@ -320,14 +361,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int num = Integer.valueOf(b12.getText().toString());
                 if(num == click){
+                    if(num >= 26){
+                        b12.setVisibility(View.INVISIBLE);
+                    }
                     b12.setText(String.valueOf(li2.get(11)));
                     click++;
                     t1.setText(String.valueOf(click));
                     b12.setBackgroundResource(R.drawable.click_btn);
                 }
-                if(num >= 26){
-                    b12.setBackgroundResource(R.drawable.btn);
-                }
+
             }
         });
         b13.setOnClickListener(new View.OnClickListener() {
@@ -335,14 +377,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int num = Integer.valueOf(b13.getText().toString());
                 if(num == click){
+                    if(num >= 26){
+                        b13.setVisibility(View.INVISIBLE);
+                    }
                     b13.setText(String.valueOf(li2.get(12)));
                     click++;
                     t1.setText(String.valueOf(click));
                     b13.setBackgroundResource(R.drawable.click_btn);
                 }
-                if(num >= 26){
-                    b13.setBackgroundResource(R.drawable.btn);
-                }
+
             }
         });
         b14.setOnClickListener(new View.OnClickListener() {
@@ -350,14 +393,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int num = Integer.valueOf(b14.getText().toString());
                 if(num == click){
+                    if(num >= 26){
+                        b14.setVisibility(View.INVISIBLE);
+                    }
                     b14.setText(String.valueOf(li2.get(13)));
                     click++;
                     t1.setText(String.valueOf(click));
                     b14.setBackgroundResource(R.drawable.click_btn);
                 }
-                if(num >= 26){
-                    b14.setBackgroundResource(R.drawable.btn);
-                }
+
             }
         });
         b15.setOnClickListener(new View.OnClickListener() {
@@ -365,14 +409,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int num = Integer.valueOf(b15.getText().toString());
                 if(num == click){
+                    if(num >= 26){
+                        b15.setVisibility(View.INVISIBLE);
+                    }
                     b15.setText(String.valueOf(li2.get(14)));
                     click++;
                     t1.setText(String.valueOf(click));
                     b15.setBackgroundResource(R.drawable.click_btn);
                 }
-                if(num >= 26){
-                    b15.setBackgroundResource(R.drawable.btn);
-                }
+
             }
         });
         b16.setOnClickListener(new View.OnClickListener() {
@@ -380,14 +425,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int num = Integer.valueOf(b16.getText().toString());
                 if(num == click){
+                    if(num >= 26){
+                        b16.setVisibility(View.INVISIBLE);
+                    }
                     b16.setText(String.valueOf(li2.get(15)));
                     click++;
                     t1.setText(String.valueOf(click));
                     b16.setBackgroundResource(R.drawable.click_btn);
                 }
-                if(num >= 26){
-                    b16.setBackgroundResource(R.drawable.btn);
-                }
+
             }
         });
         b17.setOnClickListener(new View.OnClickListener() {
@@ -395,14 +441,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int num = Integer.valueOf(b17.getText().toString());
                 if(num == click){
+                    if(num >= 26){
+                        b17.setVisibility(View.INVISIBLE);
+                    }
                     b17.setText(String.valueOf(li2.get(16)));
                     click++;
                     t1.setText(String.valueOf(click));
                     b17.setBackgroundResource(R.drawable.click_btn);
                 }
-                if(num >= 26){
-                    b17.setBackgroundResource(R.drawable.btn);
-                }
+
             }
         });
         b18.setOnClickListener(new View.OnClickListener() {
@@ -410,14 +457,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int num = Integer.valueOf(b18.getText().toString());
                 if(num == click){
+                    if(num >= 26){
+                        b18.setVisibility(View.INVISIBLE);
+                    }
                     b18.setText(String.valueOf(li2.get(17)));
                     click++;
                     t1.setText(String.valueOf(click));
                     b18.setBackgroundResource(R.drawable.click_btn);
                 }
-                if(num >= 26){
-                    b18.setBackgroundResource(R.drawable.btn);
-                }
+
             }
         });
         b19.setOnClickListener(new View.OnClickListener() {
@@ -425,14 +473,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int num = Integer.valueOf(b19.getText().toString());
                 if(num == click){
+                    if(num >= 26){
+                        b19.setVisibility(View.INVISIBLE);
+                    }
                     b19.setText(String.valueOf(li2.get(18)));
                     click++;
                     t1.setText(String.valueOf(click));
                     b19.setBackgroundResource(R.drawable.click_btn);
                 }
-                if(num >= 26){
-                    b19.setBackgroundResource(R.drawable.btn);
-                }
+
             }
         });
         b20.setOnClickListener(new View.OnClickListener() {
@@ -440,14 +489,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int num = Integer.valueOf(b20.getText().toString());
                 if(num == click){
+                    if(num >= 26){
+                        b20.setVisibility(View.INVISIBLE);
+                    }
                     b20.setText(String.valueOf(li2.get(19)));
                     click++;
                     t1.setText(String.valueOf(click));
                     b20.setBackgroundResource(R.drawable.click_btn);
                 }
-                if(num >= 26){
-                    b20.setBackgroundResource(R.drawable.btn);
-                }
+
             }
         });
         b21.setOnClickListener(new View.OnClickListener() {
@@ -455,14 +505,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int num = Integer.valueOf(b21.getText().toString());
                 if(num == click){
+                    if(num >= 26){
+                        b21.setVisibility(View.INVISIBLE);
+                    }
                     b21.setText(String.valueOf(li2.get(20)));
                     click++;
                     t1.setText(String.valueOf(click));
                     b21.setBackgroundResource(R.drawable.click_btn);
                 }
-                if(num >= 26){
-                    b21.setBackgroundResource(R.drawable.btn);
-                }
+
             }
         });
         b22.setOnClickListener(new View.OnClickListener() {
@@ -470,14 +521,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int num = Integer.valueOf(b22.getText().toString());
                 if(num == click){
+                    if(num >= 26){
+                        b22.setVisibility(View.INVISIBLE);
+                    }
                     b22.setText(String.valueOf(li2.get(21)));
                     click++;
                     t1.setText(String.valueOf(click));
                     b22.setBackgroundResource(R.drawable.click_btn);
                 }
-                if(num >= 26){
-                    b22.setBackgroundResource(R.drawable.btn);
-                }
+
             }
         });
         b23.setOnClickListener(new View.OnClickListener() {
@@ -485,14 +537,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int num = Integer.valueOf(b23.getText().toString());
                 if(num == click){
+                    if(num >= 26){
+                        b23.setVisibility(View.INVISIBLE);
+                    }
                     b23.setText(String.valueOf(li2.get(22)));
                     click++;
                     t1.setText(String.valueOf(click));
                     b23.setBackgroundResource(R.drawable.click_btn);
                 }
-                if(num >= 26){
-                    b23.setBackgroundResource(R.drawable.btn);
-                }
+
             }
         });
         b24.setOnClickListener(new View.OnClickListener() {
@@ -500,14 +553,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int num = Integer.valueOf(b24.getText().toString());
                 if(num == click){
+                    if(num >= 26){
+                        b24.setVisibility(View.INVISIBLE);
+                    }
                     b24.setText(String.valueOf(li2.get(23)));
                     click++;
                     t1.setText(String.valueOf(click));
                     b24.setBackgroundResource(R.drawable.click_btn);
                 }
-                if(num >= 26){
-                    b24.setBackgroundResource(R.drawable.btn);
-                }
+
             }
         });
         b25.setOnClickListener(new View.OnClickListener() {
@@ -515,14 +569,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int num = Integer.valueOf(b25.getText().toString());
                 if(num == click){
+                    if(num >= 26){
+                        b25.setVisibility(View.INVISIBLE);
+                    }
                     b25.setText(String.valueOf(li2.get(24)));
                     click++;
                     t1.setText(String.valueOf(click));
                     b25.setBackgroundResource(R.drawable.click_btn);
                 }
-                if(num >= 26){
-                    b25.setBackgroundResource(R.drawable.btn);
-                }
+
             }
         });
 
@@ -554,7 +609,33 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void complete() {
+
         cdt.cancel();
+        result.setVisibility(View.VISIBLE);
+        if(seconds < 20){
+            result.setText("Impossible !");
+        }
+        else if(seconds < 30){
+            result.setText("Wow !");
+        }
+
+        else if(seconds < 40){
+            result.setText("You are special !");
+        }
+        else if(seconds < 60){
+            result.setText("Expert !");
+        }
+
+        else if(seconds < 80){
+            result.setText("Normal !");
+        }
+        else if(seconds < 100){
+            result.setText("You are getting old !");
+        }
+        else{
+            result.setText("You are old !");
+        }
+
 
         /*db.execSQL("INSERT INTO Fast VALUES('"+seconds+"');");
         Cursor c=db.rawQuery("SELECT * FROM Fast WHERE timing='"+seconds+"'", null);
